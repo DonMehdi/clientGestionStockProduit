@@ -4,10 +4,8 @@ import { ProduitComponent } from './produit/produit.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
   const routes: Routes = [
-  {path:'product', component:ProduitComponent},
-
-  {path:'dashboard', component:DashboardComponent},
-  {path:'', redirectTo: '/dashboard', pathMatch:'full' }
+  {path:"product", component:ProduitComponent},
+  {path:"dashboard", component:DashboardComponent}
     ];
 
 @NgModule({

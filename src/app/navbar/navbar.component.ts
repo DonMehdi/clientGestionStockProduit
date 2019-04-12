@@ -18,8 +18,10 @@ showSideBar: EventEmitter<any> = new EventEmitter();
   ngOnInit() {
   }
 
-  showSideBarEmitter(){
+  showSideBarEmitter():boolean{
 
     this.showSideBar.emit('');
+    //this return is to prevent the href frpom loading the page
+    return false;
   }
 }
